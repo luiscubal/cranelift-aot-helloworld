@@ -39,6 +39,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "cranelift-aot-helloworld"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "cranelift-codegen",
+ "cranelift-frontend",
+ "cranelift-module",
+ "cranelift-object",
+ "target-lexicon",
+]
+
+[[package]]
 name = "cranelift-bforest"
 version = "0.114.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -151,18 +163,6 @@ dependencies = [
  "cranelift-module",
  "log",
  "object",
- "target-lexicon",
-]
-
-[[package]]
-name = "cranelift-test"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "cranelift-codegen",
- "cranelift-frontend",
- "cranelift-module",
- "cranelift-object",
  "target-lexicon",
 ]
 
